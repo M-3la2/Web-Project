@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SATS - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <h1>Smart Attendance Tracking System</h1>
+                <p class="tagline">Simplifying attendance management for modern education</p>
+            </div>
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="register.html" class="nav-link">Register</a>
+                <a href="checkin.html" class="nav-link">Check-in</a>
+                <a href="history.html" class="nav-link">History</a>
+                <a href="calendar.html" class="nav-link">Calendar</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Get In Touch</h2>
+            <p>Have questions? We're here to help. Reach out to our support team.</p>
+        </section>
+
+        <section class="content">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-group">
+                        <h4>Email</h4>
+                        <p><a href="mailto:support@sats.edu">support@sats.edu</a></p>
+                    </div>
+                    <div class="info-group">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+201234567890">+20 123 456 7890</a></p>
+                    </div>
+                    <div class="info-group">
+                        <h4>Office Location</h4>
+                        <p>New Mansoura University<br>Building A, Room 101<br>New Mansoura, Egypt</p>
+                    </div>
+                    <div class="info-group">
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" method="POST" action="#" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" placeholder="Tell us more about your inquiry..." rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div id="contactMessage" class="message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smart Attendance Tracking System. All rights reserved.</p>
+        <p>For questions or support, please visit our <a href="contact.html">Contact Us</a> page.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
