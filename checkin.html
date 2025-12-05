@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SATS - Class Check-in</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo-section">
+                    <h1>SATS</h1>
+                    <p class="tagline">Smart Attendance Tracking System</p>
+                </div>
+                <nav class="navigation" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="register.html" class="nav-link">Register</a>
+                    <a href="checkin.html" class="nav-link active" aria-current="page">Check-in</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <section class="page-header" aria-labelledby="page-title">
+                <h2 id="page-title">Class Check-in</h2>
+                <p>Enter your class code to mark your attendance</p>
+            </section>
+
+            <section class="content">
+                <div class="checkin-container">
+                    <div class="checkin-form-wrapper">
+                        <h3>Quick Check-in</h3>
+                        <form id="checkinForm" method="POST" action="#" novalidate>
+                            <div class="form-group">
+                                <label for="classCode">Class Code <span aria-label="required">*</span></label>
+                                <input type="text" id="classCode" name="classCode" placeholder="Enter your class code" required aria-required="true" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="securityQuestion">Security Question <span class="optional">(Optional)</span></label>
+                                <input type="text" id="securityQuestion" name="securityQuestion" placeholder="Answer the instructor's question" aria-describedby="optional-note">
+                                <small id="optional-note" style="color: var(--muted); display: block; margin-top: 4px;">Only if your instructor provides one</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Check In Now</button>
+                        </form>
+
+                        <div id="checkinMessage" class="message" role="alert" aria-live="polite"></div>
+                    </div>
+
+                    <div class="checkin-info">
+                        <h3>How to Check In</h3>
+                        <ol class="steps-list">
+                            <li><strong>Ask your instructor</strong> for the class code</li>
+                            <li><strong>Enter the code</strong> in the field above</li>
+                            <li><strong>Answer the security question</strong> if your instructor provides one</li>
+                            <li><strong>Click "Check In Now"</strong> to confirm your attendance</li>
+                        </ol>
+
+                        <div class="checkin-tips">
+                            <h4>Tips for Successful Check-in</h4>
+                            <ul>
+                                <li>Make sure you're entering the correct class code</li>
+                                <li>Check-in within the time window set by your instructor</li>
+                                <li>Keep your student ID ready for verification</li>
+                                <li>If you have issues, contact your instructor or support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Smart Attendance Tracking System. All rights reserved.</p>
+            <p>For questions or support, please visit our <a href="contact.html">Contact Us</a> page.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
