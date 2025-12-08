@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SATS - Sign In</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo-section">
+                    <h1>SATS</h1>
+                    <p class="tagline">Smart Attendance Tracking System</p>
+                </div>
+                <nav class="navigation" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="register.html" class="nav-link active" aria-current="page">Sign In</a>
+                    <a href="checkin.html" class="nav-link">Check-in</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <section class="page-header" aria-labelledby="page-title">
+                <h2 id="page-title">Sign In Your Attendance </h2>
+                <p>Enter your details to access the attendance system</p>
+            </section>
+
+            <section class="content">
+                <div class="form-container">
+                    <h3>Sign In Form</h3>
+                    <form id="registerForm" method="POST" action="#" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name <span aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentID">Student ID <span aria-label="required">*</span></label>
+                            <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID" required aria-required="true">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+
+                    <div id="regMessage" class="message" role="alert" aria-live="polite"></div>
+
+                    <div style="text-align: center; margin-top: 20px; color: var(--muted);">
+                        Need help? <a href="contact.html">Contact support</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Smart Attendance Tracking System. All rights reserved.</p>
+            <p>For questions or support, please visit our <a href="contact.html">Contact Us</a> page.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
