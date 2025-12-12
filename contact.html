@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SATS - Contact Us</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo-section">
+                    <h1>SATS</h1>
+                    <p class="tagline">Smart Attendance Tracking System</p>
+                </div>
+                <nav class="navigation" role="navigation" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="register.html" class="nav-link">Sign in</a>
+                    <a href="checkin.html" class="nav-link">Check-in</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <section class="page-header" aria-labelledby="page-title">
+                <h2 id="page-title">Get In Touch</h2>
+                <p>Have questions? We're here to help. Reach out to our support team.</p>
+            </section>
+
+            <section class="content">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <div class="info-icon">📧</div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:support@sats.edu" aria-label="Email: support@sats.edu">support@sats.edu</a></p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">📱</div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+201234567890" aria-label="Phone: +20 123 456 7890">+20 123 456 7890</a></p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">📍</div>
+                                <h4>Office Location</h4>
+                                <p>
+                                    New Mansoura University<br>
+                                    Building A, Room 101<br>
+                                    New Mansoura, Egypt
+                                </p>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">⏰</div>
+                                <h4>Business Hours</h4>
+                                <p>
+                                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                    Saturday: 10:00 AM - 2:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" method="POST" action="#" novalidate>
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span aria-label="required">*</span></label>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your full name" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span aria-label="required">*</span></label>
+                                <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject <span aria-label="required">*</span></label>
+                                <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message <span aria-label="required">*</span></label>
+                                <textarea id="contactMessage" name="message" placeholder="Tell us more about your inquiry..." rows="6" required aria-required="true"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+
+                        <div id="contactMessage" class="message" role="alert" aria-live="polite"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Smart Attendance Tracking System. All rights reserved.</p>
+            <p>For questions or support, please visit our <a href="contact.html">Contact Us</a> page.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
